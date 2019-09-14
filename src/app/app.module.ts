@@ -8,10 +8,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserComponent } from './components/user/user/user.component';
+import { AddUserComponent } from './components/user/add-user/add-user.component';
+import { UserDetailsComponent } from './components/user/user-details/user-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserComponent,
+    AddUserComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
