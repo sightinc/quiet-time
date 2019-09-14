@@ -5,32 +5,20 @@
 
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">QT</a>
+    <a class="navbar-brand">QT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Add a devotion</a>
-        <a class="nav-item nav-link" href="#">Add a user</a>
+        <a routerLink="" class="nav-item nav-link active" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" routerLink="user/add" routerLinkActive="active">Add a devotion</a>
+        <a class="nav-item nav-link" routerLink="users" routerLinkActive="active">Add a user</a>
       </div>
     </div>
   </nav>
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h1>Quiet time</h1>
-      <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a routerLink="users" class="btnbtn-light btn-sm" role="button" routerLinkActive="active">Retrieve</a>
-          </li>
-          <li class="nav-item">
-              <a routerLink="user/add" class="btnbtn-light btn-sm" role="button" routerLinkActive="active">Create</a>
-            </li>
-  
-        </ul>
       <div style="text-align:center">
           <div>
             <h1>Welcome to {{ title }}!</h1>
@@ -41,8 +29,5 @@
       <hr />
       <router-outlet></router-outlet>  
 
-    </div> 
-  
-  </div>
 </div>
 
