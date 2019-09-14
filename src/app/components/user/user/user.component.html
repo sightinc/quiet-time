@@ -1,6 +1,36 @@
 <div class="container">
-    <h5>All users </h5>
     <div *ngFor="let user of users; let rowIndex=index">
-        <a [routerLink]="['/users', user._id]"  style="color:black"><span class="badge badge-dark">{{ rowIndex + 1 }}</span></a>
+        <!-- <a [routerLink]="['/users', user._id]"  style="color:black"><span class="badge badge-dark">{{ rowIndex + 1 }}</span></a> -->
+
+        <div class="card">
+                <div class="card-header">
+                  Current Quiet time Users 
+                </div>
+                <div class="card-body">
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>                               
+                                
+                                </tbody>
+                              </table>
+                  <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
     </div>
 </div>
